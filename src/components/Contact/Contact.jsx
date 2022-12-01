@@ -1,5 +1,5 @@
 import { Button, Span, ContactBox } from "./Contact.styled"
-import { deleteContact } from "../../redux/contactsSlice"
+import { deleteContact } from "../../redux/operations"
 import { useDispatch } from "react-redux";
 
 
