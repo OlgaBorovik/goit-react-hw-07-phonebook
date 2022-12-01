@@ -8,7 +8,7 @@ const Contact = ({contact}) => {
     const handleDelete = () => dispatch(deleteContact(contact.id));
     return (
         <ContactBox>
-            <Span>{contact.name}: {contact.number}</Span>
+            <Span>{contact.name}: {contact.phone}</Span>
             <Button type="button" onClick={handleDelete}>Delete</Button> 
         </ContactBox>
     )
