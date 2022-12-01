@@ -1,13 +1,15 @@
 import React from "react";
-import PropTypes from "prop-types"
 import { ContactsUl, ContactItem } from "./ContactList.styled"
 import Contact from "../Contact/Contact"
+// import { selectVisibleContacts } from '../../redux/selectors'
+// import { useSelector} from "react-redux"
 
 
 
 function ContactList({contacts}) {
+    // const contacts = useSelector(selectVisibleContacts)
+    // console.log(contacts)
     return (
-        
             <ContactsUl>
                 {contacts.map(contact  => (
                 <ContactItem key={contact.id}>
@@ -18,11 +20,6 @@ function ContactList({contacts}) {
         )
     
 
-}
-
-ContactList.propTypes = {
-    contacts: PropTypes.arrayOf(PropTypes.object).isRequired,
-    onDelete: PropTypes.func
 }
 
 
